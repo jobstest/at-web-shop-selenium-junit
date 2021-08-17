@@ -1,0 +1,2 @@
+2021-08-16 14:48:41,584 INFO [main] i.g.b.w.WebDriverManager [WebDriverManager.java:632] Using chromedriver 92.0.4515.107 (resolved driver for Chrome 92)
+2021-08-16 14:48:41,604 INFO [main] i.g.b.w.WebDriverManager [WebDriverManager.java:689] Exporting webdriver.chrome.driver as C:\Users\Владимир\.cache\selenium\chromedriver\win32\92.0.4515.107\chromedriver.exe
