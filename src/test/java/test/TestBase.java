@@ -39,8 +39,8 @@ public class TestBase {
         homePageStep = PageFactory.initElements(driver, HomePageStep.class);
     }
 
-    /*@AfterEach
+    @AfterEach
     public void finish(){
         driver.quit();
-    }*/
+    }
 }

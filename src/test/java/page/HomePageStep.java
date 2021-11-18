@@ -17,7 +17,7 @@ public class HomePageStep extends PageBase {
 
     @Step(value = "открыть url")
     public HomePageStep goTo(){
-        driver.get(SITE_URL);
+        driver.get("http://demowebshop.tricentis.com");
         return this;
     }
     @Step(value = "Нажать на кнопку Log in")
@@ -60,16 +60,19 @@ public class HomePageStep extends PageBase {
         isElementDisplayed(homePageSelectors.LINK_LOGIN);
         return this;
     }
-
+    @Step(value = "Нажать на ссылку Register")
+    public HomePageStep clickLinkRegister(){
+        click(homePageSelectors.LINK_REGISTER);
+        return this;
+    }
 
     @Step(value = "Авторизация с правильными email и password")
     public HomePageStep auth(){
-        goTo();
-        clickLinkLogin();
+        click(homePageSelectors.LINK_LOGIN);
         fillEmail("test_web_shop@mail.ru");
         fillPassword("Selenium123");
-        clickBtnLogin();
-        linkLogout();
+        click(homePageSelectors.BUTTON_LOGIN);
+        isElementDisplayed(homePageSelectors.LINK_LOGOUT);
         return this;
     }
 

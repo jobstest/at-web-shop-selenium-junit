@@ -28,4 +28,9 @@ public class HomePageSelectors {
      * Сообщение об ошибке
      */
     public By ERROR_MESSAGE = By.xpath("//div[@class='message-error']");
+    /**
+     * Ссылка Register
+     */
+    public By LINK_REGISTER = By.xpath("//a[text()='Register']");
+
 }

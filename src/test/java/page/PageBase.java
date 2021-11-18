@@ -23,7 +23,7 @@ public class PageBase {
 
     public WebDriver driver;
     public WebDriverWait wait;
-    String SITE_URL = "http://demowebshop.tricentis.com/";
+
 
 
     public PageBase(WebDriver driver){

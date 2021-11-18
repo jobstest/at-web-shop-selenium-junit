@@ -4,13 +4,12 @@ import jdk.jfr.Description;
 import org.junit.jupiter.api.Test;
 
 public class HomePageTest extends TestBase{
-
+    String url = "http://demowebshop.tricentis.com/";
     @Test
     @Description("Авторизация с правильной почтой и паролем")
     public void authorization(){
         homePageStep.goTo()
-                    .auth()
-                .logout();
+                    .auth();
     }
     @Test
     @Description("Авторизация с неправильной почтой")
@@ -32,6 +31,8 @@ public class HomePageTest extends TestBase{
                 .clickBtnLogin()
                 .errorMessage();
     }
+
+
 
 
 }
